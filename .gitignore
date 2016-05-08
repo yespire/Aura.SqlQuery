@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
+# Editors + OS related files
+#    eclipse / phpstorm / netbean / os
+#
+# eclipse
+/.settings
+/.buildpath
+/.project
+
+# phpstorm
+/.idea
+
+# netbeans
+/nbproject
+
+# os
+*.DS_Store
+*.swp
+*.orig
