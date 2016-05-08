@@ -212,6 +212,20 @@ abstract class AbstractQuery
 
     /**
      *
+     * 2-in-1 method
+     */
+    public function bind($name, $value=NULL)
+    {
+        if (is_array($name)) {
+            $this->bindValues($name);
+        } else {
+            $this->bindValue($name, $value);
+        }
+        return $this;
+    }
+
+    /**
+     *
      * Binds multiple values to placeholders; merges with existing values.
      *
      * @param array $bind_values Values to bind to placeholders.
