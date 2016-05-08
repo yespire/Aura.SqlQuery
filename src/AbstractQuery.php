@@ -212,7 +212,9 @@ abstract class AbstractQuery
 
     /**
      *
-     * 2-in-1 method
+     * Wrapper method for bindValue and bindValues
+     *
+     * @return $this
      */
     public function bind($name, $value=NULL)
     {

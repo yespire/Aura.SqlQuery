@@ -52,6 +52,15 @@ interface QueryInterface
 
     /**
      *
+     * Binds a single value and multiple values, wrapper method for bindValue and bindValues
+     *
+     * @return $this
+     *
+     */
+    public function bind($name, $value);
+
+    /**
+     *
      * Adds values to bind into the query; merges with existing values.
      *
      * @param array $bind_values Values to bind to the query.
